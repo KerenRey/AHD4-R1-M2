@@ -1,0 +1,47 @@
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@mixin input-form{
+    padding: 12px 15px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    font-size: 1rem;
+    transition: all .3s ease;
+
+    &:focus{
+        border-color: $gold;
+        box-shadow: 0 0 10px rgba(212, 175, 55, .3);
+        transform: translateY(-2px);
+    }
+}
+@mixin button{
+    background: linear-gradient(
+        135deg,
+        #D4AF37,
+        #F4D03F
+    );
+    color: #222;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+
+    button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(212,175,55,.4);
+    }
+}
+
+
+

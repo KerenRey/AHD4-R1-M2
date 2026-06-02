@@ -1,0 +1,40 @@
+@media(max-width:768px){
+    .header{
+        .navbar{
+            .search-container{
+                    input{
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    .form-section{
+        .bookForm{
+            input{
+                width: 300px;
+            }
+    }
+    }
+
+}
+
+@media(max-width:360px){
+    .header{
+        .navbar{
+            .search-container{
+                    input{
+                        width: 140px;
+                    }
+                }
+            }
+        }
+
+    .hero{
+        .hero-content{
+            text-align: center;
+            padding: 20px;
+        }
+    }
+}
+
+    

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="icon" href="img/biblioteca.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="logo">📚 Mi Biblioteca</h1>
+
+            <div class="search-container">
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Buscar libro...">
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Organiza tus libros favoritos</h2>
+            <p>
+                Agrega, administra y encuentra fácilmente tus libros.
+            </p>
+        </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="form-section">
+
+        <h2>Agregar Libro</h2>
+
+        <form id="bookForm" class="bookForm">
+
+            <input
+                type="text"
+                id="titulo"
+                placeholder="Título"
+                required
+            >
+
+            <input
+                type="text"
+                id="autor"
+                placeholder="Autor"
+                required
+            >
+
+            <input
+                type="text"
+                id="categoria"
+                placeholder="Categoría"
+                required
+            >
+
+            <input
+                type="url"
+                id="imagen"
+                placeholder="URL de la portada"
+            >
+
+            <button type="submit">
+               📚 Agregar Libro
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- LIBROS -->
+    <main class="library">
+
+        <h2>Mis Libros</h2>
+
+        <div class="books-container" id="booksContainer">
+
+            <!-- Aquí se insertarán los libros dinámicamente -->
+
+            <!-- Ejemplo de tarjeta -->
+
+            <!--
+            <article class="book-card">
+
+               
+                > <img
+                    src="img/libro.jpg"
+                    alt="Portada"
+
+                <div class="book-info">
+                    <h3>Nombre del Libro</h3>
+                    <p>Autor</p>
+                    <span>Fantasía</span>
+                </div>
+
+                <button class="delete-btn">
+                    Eliminar
+                </button>
+
+            </article>
+            -->
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Mi Biblioteca Digital</p>
+    </footer>
+
+    <script src="dist/app.js"></script>
+</body>
+
+</html>

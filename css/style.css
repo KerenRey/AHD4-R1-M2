@@ -1,0 +1,221 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: "Georgia", Times New Roman, Times, serif;
+  background-color: #1E1E1E;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  background-color: #D4AF37;
+  padding: 20px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.header .navbar .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .navbar .search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .navbar .search-container input {
+  width: 300px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+}
+.header .navbar .search-container input:focus {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img/librero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.hero .hero-content {
+  color: #F5F5F5;
+}
+
+.form-section {
+  color: #F5F5F5;
+  text-align: center;
+}
+.form-section .bookForm {
+  width: 100%;
+  padding: 30px;
+  gap: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-section .bookForm input {
+  padding: 12px 15px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  width: 500px;
+}
+.form-section .bookForm input:focus {
+  border-color: #D4AF37;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+  transform: translateY(-2px);
+}
+.form-section .bookForm button {
+  background: linear-gradient(135deg, #D4AF37, #F4D03F);
+  color: #222;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form-section .bookForm button button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(212, 175, 55, 0.4);
+}
+
+.library {
+  padding: 20px;
+  color: #F5F5F5;
+  background-color: rgba(0, 0, 0, 0.192);
+}
+.library .books-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background-color: #2C2C2C;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #D4AF37;
+  text-align: center;
+  padding: 30px;
+  margin-top: auto;
+}
+.footer p {
+  margin: 0;
+}
+
+.delete-btn {
+  background-color: #e63946;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c1121f;
+  transform: scale(1.05);
+}
+
+.book-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  width: 240px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.book-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.book-info h3 {
+  font-size: 1.1rem;
+  color: #222;
+  margin: 0;
+}
+
+.book-info p {
+  color: #555;
+  margin: 0;
+}
+
+.book-info span {
+  background-color: #eef2ff;
+  color: #3f51b5;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  width: fit-content;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .header .navbar .search-container input {
+    width: 200px;
+  }
+  .form-section .bookForm input {
+    width: 300px;
+  }
+}
+@media (max-width: 360px) {
+  .header .navbar .search-container input {
+    width: 140px;
+  }
+  .hero .hero-content {
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
