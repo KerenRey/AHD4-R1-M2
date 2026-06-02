@@ -121,16 +121,6 @@ h1 {
   padding: 20px;
 }
 
-.footer {
-  background-color: #D4AF37;
-  text-align: center;
-  padding: 30px;
-  margin-top: auto;
-}
-.footer p {
-  margin: 0;
-}
-
 .delete-btn {
   background-color: #e63946;
   color: white;
@@ -146,6 +136,13 @@ h1 {
 .delete-btn:hover {
   background-color: #c1121f;
   transform: scale(1.05);
+}
+
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
 
 .book-card {
@@ -176,7 +173,7 @@ h1 {
 .book-info {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 
 .book-info h3 {
@@ -198,6 +195,16 @@ h1 {
   font-size: 0.85rem;
   width: fit-content;
   font-weight: 600;
+}
+
+.footer {
+  background-color: #D4AF37;
+  text-align: center;
+  padding: 30px;
+  margin-top: auto;
+}
+.footer p {
+  margin: 0;
 }
 
 @media (max-width: 768px) {

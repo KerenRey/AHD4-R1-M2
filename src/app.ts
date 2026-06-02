@@ -94,7 +94,6 @@ class Biblioteca {
                 <p>${libro.autor}</p>
                 <p>Año: ${libro.anio}</p>
                 <span>${libro.categoria}</span> 
-                <br>
                 <span>${libro.estado}</span>
             `;
 
